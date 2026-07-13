@@ -3,7 +3,7 @@ from pathlib import Path
 
 import yfinance as yf
 import pandas as pd
-
+from pandas.core.interchange.dataframe_protocol import DataFrame
 
 # Path to the top-level data folder (../data from this file)
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
@@ -11,9 +11,9 @@ DATA_DIR = PROJECT_ROOT / "data"
 RAW_DIR = DATA_DIR / "raw"
 
 def load_prices(
-    symbol: str = "AAPL",
+    symbol: str = "GOOGL",
     start: str = "2020-01-01",
-    end: str = "2024-01-01",
+    end: str = "2021-01-01",
     save_csv: bool = True,
 ) -> pd.DataFrame:
     """

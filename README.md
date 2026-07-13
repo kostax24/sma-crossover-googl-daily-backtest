@@ -1,3 +1,2 @@
-# Test projekt
-
-- toto je projekt
+# Simple moving average stock backetester
+- first project

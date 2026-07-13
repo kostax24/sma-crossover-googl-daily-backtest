@@ -36,5 +36,5 @@ def plot_equity_vs_price(backtest_df: pd.DataFrame, title: str = "Strategy vs Pr
     fig.tight_layout()
 
     # Save instead of show
-    fig.savefig("equity_vs_price.png")
+    fig.savefig("GOOGL_equity_vs_price.png")
     print("Saved plot to equity_vs_price.png")
