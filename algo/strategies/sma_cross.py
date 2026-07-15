@@ -2,7 +2,7 @@ import pandas as pd
 
 def sma_crossover_signals(
     prices: pd.DataFrame,
-    short_window: int = 5,
+    short_window: int = 5, # adjust signals if needed
     long_window: int = 20,
 ) -> pd.DataFrame:
     df = prices.copy()

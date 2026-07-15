@@ -8,10 +8,10 @@ DATA_DIR = PROJECT_ROOT / "data"
 RAW_DIR = DATA_DIR / "raw"
 
 def load_prices(
-    symbol: str = "GOOGL",
-    start: str = "2020-01-01",
-    end: str = "2021-01-01",
-    save_csv: bool = True,
+    symbol: str,
+    start: str | None = None,
+    end: str | None = None,
+    save_csv: bool = True, # set to False if you do not want to save the CSV
 ) -> pd.DataFrame:
     """
     Download daily price data from Yahoo Finance and return as a pandas DataFrame.
