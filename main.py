@@ -19,7 +19,7 @@ valid = backtest_df["SMA_long"].notna()
 rets = backtest_df.loc[valid, "return_strategy"].dropna()
 equity = backtest_df.loc[valid, "equity"].dropna()
 
-# print(backtest_df.head(100).to_string()) # check the look of the dataframe
+# print(backtest_df.head(25).to_string()) # check the dataframe
 # print(backtest_df.tail(10).to_string())
 
 print("Number of trades:", performance.number_of_trades(rets))
