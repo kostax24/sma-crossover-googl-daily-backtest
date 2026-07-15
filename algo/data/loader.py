@@ -1,9 +1,6 @@
-import os
 from pathlib import Path
-
 import yfinance as yf
 import pandas as pd
-from pandas.core.interchange.dataframe_protocol import DataFrame
 
 # Path to the top-level data folder (../data from this file)
 PROJECT_ROOT = Path(__file__).resolve().parents[2]

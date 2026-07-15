@@ -1,6 +1,5 @@
 import pandas as pd
 
-
 def sma_crossover_signals(
     prices: pd.DataFrame,
     short_window: int = 5,

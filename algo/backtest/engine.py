@@ -1,6 +1,6 @@
 import pandas as pd
 import matplotlib
-matplotlib.use("Agg")  # use non-GUI backend
+matplotlib.use("Agg")  # using non-GUI backend
 import matplotlib.pyplot as plt
 
 

@@ -5,8 +5,8 @@ from algo.backtest import engine, performance
 
 if __name__ == "__main__":
     prices = loader.load_prices(
-        symbol="GOOGL",
-        start="2020-01-01",
+        symbol="GOOGL", # can adjust for other stocks
+        start="2020-01-01", # can adjust for other dates
         end="2020-12-31",
 )
 
@@ -19,8 +19,8 @@ valid = backtest_df["SMA_long"].notna()
 rets = backtest_df.loc[valid, "return_strategy"].dropna()
 equity = backtest_df.loc[valid, "equity"].dropna()
 
-print(backtest_df.head(100).to_string())
-print(backtest_df.tail(10).to_string())
+# print(backtest_df.head(100).to_string()) # to checkout how the look of the dataframe
+# print(backtest_df.tail(10).to_string())
 
 print("Number of trades:", performance.number_of_trades(rets))
 print("Win rate:", round(performance.win_rate(rets), 4))

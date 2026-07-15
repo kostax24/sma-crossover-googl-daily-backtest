@@ -1,7 +1,5 @@
 import pandas as pd
 import numpy as np
-from pandas.io.formats.format import return_docstring
-
 
 def sharpe_ratio(returns: pd.Series, risk_free: float = 0.02, periods_per_year: int = 252) -> float:
     """
@@ -88,7 +86,3 @@ def expectancy(return_strategy: pd.Series) -> float:
 
     exp = (win_rate * avg_win) - (loss_rate * avg_loss)
     return exp
-
-
-
-
